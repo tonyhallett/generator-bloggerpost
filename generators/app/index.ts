@@ -61,8 +61,7 @@ export = class BloggerPostGenerator extends Generator{
   promptHelper:PromptHelper<BloggerPostGenerator>
   constructor(args: string|string[], options: {}){
     super(args,options);
-    console.log("In the ctor");
-    this.promptHelper=new PromptHelper<BloggerPostGenerator>(this,true);
+    this.promptHelper=new PromptHelper<BloggerPostGenerator>(this,false);
   }
   //#region prompts
   _promptPathValidateAndAssign(name:"storePath"|"idAndSecretPath"|"postTemplatePath",message:string,validate=true){

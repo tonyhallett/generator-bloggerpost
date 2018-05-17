@@ -1,6 +1,6 @@
 {
   "name": "generator-bloggerpost",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generator for npm package blogger-post",
   "author": {
     "name": "Tony Hallett",

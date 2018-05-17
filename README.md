@@ -8,7 +8,7 @@ First, install [Yeoman](http://yeoman.io) and generator-bloggerpost using [npm](
 
 ```bash
 npm install -g yo
-npm install -g generator-post
+npm install -g generator-bloggerpost
 ```
 
 Then generate your new project:

@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Tony Hallett",
+      "authorEmail": "tonyhallett74@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}

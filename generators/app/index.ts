@@ -235,10 +235,10 @@ export = class BloggerPostGenerator extends Generator{
       if(name.toLowerCase()!=="template"){
         name=name.replace(/template/i, "");
       }
-      return "." + path.sep + name + parsed.ext;
+      return ".." + path.sep + name + parsed.ext;
     }
     //the default will only be used until have prompted with that name and store=true
-    let defaultContentFilePath="./post.html";
+    let defaultContentFilePath=".." + path.sep + "post.html";
     let name="contentFilePath";
     if(this.postTemplatePath!==""){
       defaultContentFilePath=getTemplateDefaultContentFile(this.postTemplatePath);
@@ -255,6 +255,7 @@ export = class BloggerPostGenerator extends Generator{
     });
 
   }
+  //#region template
   _promptUseTemplate(){
     return this.promptHelper.singleQuestionPrompt<boolean>({
       type:"confirm",
@@ -293,7 +294,7 @@ export = class BloggerPostGenerator extends Generator{
         }
       });
   }
-
+  //#endregion
   prompting() {
       return this._promptClientIdAndClientSecret()
         .then(()=>this._promptStorePath())
